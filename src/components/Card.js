@@ -1,9 +1,20 @@
 import React from 'react'
+import users from '../users.json'
+
 
 class Card extends React.Component {
   render() {
     return (
-      // hello
+
+      <div className='card col-5'>
+        <img src={this.props.picture} className="card-img-top" alt="User" />
+        <div class="card-body">
+          <h5 className='card-title'>{this.props.name}</h5>
+          <p className='card-text'>{this.props.about}</p>
+        </div>
+      </div>
+
+
     )
   }
 }
